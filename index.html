@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link id="css" rel="stylesheet" href="theme1.css">
+  <title>Calculator App</title>
+  <script src="code.js"></script>
+</head>
+<body>
+<section id="body">
+  <header>
+    <section class="title">
+      <h2>calc</h2>
+      <h2>theme</h2>
+    </section>
+    <section class="themes">
+      <section>
+        <p>1</p>
+        <button onclick="theme1()" class="btn-theme"></button>
+      </section>
+      <section>
+        <p>2</p>
+        <button onclick="theme2()" class="btn-theme" ></button>
+      </section>
+      <section>
+        <p>3</p>
+        <button onclick="theme3()" class="btn-theme" ></button>
+      </section>
+    </section>
+  </header>
+  
+  <div class="result-screen">
+    <h1 id="screen" value=""><script>document.write(result)</script></h1>
+  </div>
+  <section class="buttons">
+    <section class="flex">
+      <button id="btn" onclick="insert(7)" >7</button>
+      <button id="btn" onclick="insert(8)">8</button>
+      <button id="btn" onclick="insert(9)" >9</button>
+      <button class="delete" onclick="deleteLast()">DEL</button>
+    </section>
+    <section class="flex">
+      <button id="btn" onclick="insert(4)" >4</button>
+      <button id="btn" onclick="insert(5)" >5</button>
+      <button id="btn" onclick="insert(6)" >6</button>
+      <button id="btn" onclick="insert('+')" >+</button>
+    </section>
+    <section class="flex">
+      <button id="btn" onclick="insert(1)" >1</button>
+      <button id="btn" onclick="insert(2)" >2</button>
+      <button id="btn" onclick="insert(3)" >3</button>
+      <button id="btn" onclick="insert('-')" >-</button>
+    </section>
+    <section class="flex">
+      <button id="btn" onclick="insert('.')" >.</button>
+      <button id="btn" onclick="insert(0)" >0</button>
+      <button id="btn" onclick="insert('/')" >/</button>
+      <button id="btn" onclick="insert('*')" >×</button>
+    </section>
+    <section class="flex">
+      <button class="reset" onclick="reset()" >RESET</button>
+      <button class="equal" onclick="equal()">=</button>
+    </section>
+  </section>
+  <h3>history</h3>
+  <section id="history">
+    <p></p>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Marīah§</a>.
+  </div>
+  </section>
+</body>
+</html>

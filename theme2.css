@@ -1,0 +1,104 @@
+*{
+box-sizing:border-box;
+font-family:serif;
+font-weight:bold;
+color:#fbe106;
+}
+
+body{background-color:#1e002a; }
+
+#body{margin:20px auto; width:50%; }
+
+.flex{display:flex;}
+
+.title{display:flex; justify-content:space-between;}
+
+.themes{
+display:flex;
+float:right;
+margin-top:-10px;
+}
+
+.themes p{margin-bottom:0; margin-top:-10px;}
+
+.themes button{
+border-radius:50%;
+height:20px;
+border:none;
+background-color:#00c4c4;
+}
+
+.themes button:hover{
+background-color:#01fcfe;
+}
+
+.result-screen{
+width:90%;
+border-radius:4%;
+background-color:#2c003f;
+margin:40px auto;
+margin-bottom:15px;
+height:50px;
+text-align:right;
+padding-right:10px;
+}
+
+.buttons{
+width:90%;
+margin:auto;
+background-color:#2c003f;
+padding:5px;
+}
+
+.buttons button{
+width:90%;
+margin:5px;
+border-radius:7%;
+height:50px;
+background-color:#3b0054;
+font-size:20px;
+font-weight:bold;
+border:none;
+border-bottom:2.5px solid #680094;
+}
+
+.buttons button:hover{
+background-color:#4a006a;
+}
+
+.buttons .delete, .buttons .reset{
+background-color:#59007f;
+border-bottom:2.5px solid #8500be;
+color:white;
+}
+
+.buttons .delete:hover, .buttons .reset:hover{
+background-color:#8500be;
+color:white;
+}
+
+.buttons .equal{
+background-color:#00c4c4;
+border-bottom:2.5px solid  #01fcfe;
+color:white;
+}
+
+.buttons .equal:hover{
+background-color:#01fcfe;
+color:white;
+}
+
+#history{
+width:90%;
+margin:auto;
+background-color:#2c003f;
+margin-top:20px;
+padding:10px;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top:20px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 600px) {
+  #body{width:80%;}
+}
